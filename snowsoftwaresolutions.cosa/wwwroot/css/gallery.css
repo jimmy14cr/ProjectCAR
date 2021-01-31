@@ -1,0 +1,128 @@
+
+/*Gallery*/
+.bg-black {
+    background: #000 !important;
+}
+
+.site-wrap:before {
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.offcanvas-menu .site-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+    .offcanvas-menu .site-wrap:before {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+.line-height-1 {
+    line-height: 1 !important;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.site-section {
+    padding: 2.5em 0;
+}
+
+@media (min-width: 768px) {
+    .site-section {
+        padding: 5em 0;
+    }
+}
+
+.site-section.site-section-sm {
+    padding: 4em 0;
+}
+
+.site-section-heading {
+    color: #fff;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .site-section-heading {
+        font-size: 4rem;
+    }
+}
+
+.site-section-heading:after {
+    content: "";
+    left: 0%;
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #000;
+}
+
+.site-section-heading.text-center:after {
+    content: "";
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: "";
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #000;
+}
+
+
+#lightgallery .item {
+    margin-bottom: 30px;
+}
+
+    #lightgallery .item img {
+        /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+        filter: gray;
+        /* IE5+ */
+        -webkit-filter: grayscale(1);
+        /* Webkit Nightlies & Chrome Canary */
+        -webkit-transition: all .1s ease-in-out;
+    }
+
+    #lightgallery .item:hover img {
+        filter: none;
+        -webkit-filter: grayscale(0);
+        -webkit-transform: scale(1.01);
+    }
+
+img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray;
+    /* IE5+ */
+    -webkit-filter: grayscale(1);
+    /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .1s ease-in-out;
+}
+
+    img:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+        -webkit-transform: scale(1.01);
+    }
